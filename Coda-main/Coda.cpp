@@ -14,6 +14,11 @@ int inserisci(coda &c, int e)
 {
 	int temp = -1;
 	//Di seguito il codice
+	if(c.fine<N){
+		c-queue[c.fine]=e;
+		c.fine++;
+		temp=0;
+	};
 	
 	return temp;
 }
