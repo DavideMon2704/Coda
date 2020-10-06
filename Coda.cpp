@@ -31,7 +31,11 @@ int estrai(coda &c)
 {
 	int temp = 0;
 	//Di seguito il codice
-	
+	if(c.testa<c.fine){
+		testa=c.queue[c.testa];
+		c.testa++;
+		scorri(c);
+	}
 	return temp;
 }
 
@@ -42,12 +46,8 @@ void stampa (coda c)
  * siano elementi in coda.
  */
 {
-	for(i=0;i<N;i++){
-		if(c.queue[i]=0)
-		    cout<<"coda vuota";
-		else
-	        cout<<c.queue[i];
-		}
+	for(i=t;i<F;i++)
+		cout<<coda[i]<<"";
 }
 
 void scorri(coda &c)
